@@ -1,0 +1,403 @@
+$base-color: #773996;
+$font-color: #9d7bb2;
+$fontp-color: #888888;
+$shadow-color: #a19ba7;
+$shadow-darken-color: #5a3061;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1, p {
+  margin: 0;
+}
+
+li, a, button {
+  text-decoration: none;
+}
+
+.ctf {
+  padding: 6px 30px;
+  color: #ffffff;
+  border-radius: 10px;
+  background: $base-color;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 5px 5px 3px $shadow-color;
+}
+
+body {
+  height: 5800px;
+  width: 100vw;
+  background: url("../img/background.png") center;
+  background-size: cover;
+}
+
+.logo {
+  width: 320px;
+  //background: #ffffff;
+  //border-radius: 8px;
+  padding: 50px;
+  //background-size: cover;
+  //background-repeat: no-repeat;
+  position: absolute;
+  animation: hop 800ms ease-in-out 200ms infinite alternate forwards, show 700ms ease-in-out 0s forwards;
+  margin-left: 20px;
+  //box-shadow: 10px 10px 8px #888888;
+
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  border-radius: 8px;
+  width: 460px;
+  height: 60px;
+  background: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 30px;
+  margin-top: 50px;
+  margin-right: 160px;
+  //box-shadow: -1px -1px 0 rgba(255, 0, 0, 0), 1px -1px 0 rgba(255, 0, 0, 0), -1px 1px 0 rgba(255, 0, 0, 0), 1px 1px 0 rgba(255, 0, 0, 0);
+  box-shadow: 10px 10px 8px $shadow-color;
+}
+
+.nav-list {
+  margin: 5px;
+  justify-items: center;
+  list-style: none;
+  color: #ffffff;
+}
+
+.nav-list li {
+  display: inline-block;
+}
+
+.nav-list li a {
+  color: $font-color;
+}
+
+.nav-list li a p {
+  padding: 10px 20px;
+}
+
+.nav-list p{
+  text-decoration: none;
+  color: $font-color;
+}
+
+.title {
+  margin-top: 260px;
+  margin-left: 60px
+}
+
+.title h1 {
+  font-size: 50px;
+  width: 350px;
+  color: $font-color;
+  margin: 0;
+}
+
+.title p {
+  color: #888888;
+  font-size: 20px;
+}
+
+.started {
+  padding: 20px 40px;
+  border-radius: 30px;
+  margin-left: 300px;
+  box-shadow: -2px 4px 8px $shadow-darken-color
+
+}
+
+.center {
+  margin-top: 180px;
+  text-align: center;
+  //width: 650px;
+  font-size: 16px;
+  color: #ffffff
+}
+.center h1 {
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 355px;
+  margin-top: 424px;
+}
+
+.box-text {
+  padding: 25px;
+  margin-top: 100px;
+  width: 390px;
+  height: 260px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: -2px 4px 8px $shadow-color;
+}
+
+.box-left {
+  display: flex;
+  align-self: start;
+}
+
+.box-right {
+  display: flex;
+  align-self: center;
+  //margin-left: 250px;
+}
+
+.top-img {
+  margin-left: 150px;
+  margin-bottom: 30px;
+}
+
+.mid-img {
+  margin-left: 250px;
+  margin-top: 276px;
+}
+
+.bottom-img {
+  margin-right: 270px;
+  margin-top: 276px;
+}
+
+.learn-more {
+  margin-left: 330px;
+  margin-top: 200px;
+}
+
+.box h1 {
+  color: $font-color;
+  margin-left: 25px;
+}
+
+.box p {
+  margin-left: 25px;
+  color: $fontp-color
+}
+
+.center-mid {
+  margin-top: 310px;
+}
+
+.button {
+  border-radius: 30px;
+  width: 100px;
+  padding: 20px 40px;
+  box-shadow: -2px 4px 8px $shadow-darken-color;
+}
+
+.container-numbers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 60px;
+}
+
+.container-numbers h1 {
+  margin-left: 60px;
+  color: #ffffff;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.numbers {
+  font-size: 30px;
+}
+
+.portfolio {
+  //width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-box {
+  margin: 100px 25px 0 25px;
+  width: 256px;
+  height: 480px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: -2px 4px 8px $shadow-darken-color;
+}
+
+.subscribe-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 300px;
+  width: 1000px;
+  height: 480px;
+  background: #6e4898;
+  border-radius: 30px;
+  //box-shadow: -2px 4px 8px $shadow-darken-color;
+}
+
+input[type=text], input[type=submit] {
+  width: 320px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 20px;
+  color: $font-color;
+  margin: 10px 10px 10px 10px;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+.data textarea {
+  margin-top: 10px;
+  width: 320px;
+  border-radius: 30px;
+  border: none;
+  padding: 10px;
+  overflow-y: scroll;
+  height: 100px;
+  resize: none; /* Remove this if you want the user to resize the textarea */
+}
+
+.data {
+  flex-direction: column;
+  display: flex;
+}
+
+.container-test {
+  display: flex;
+  justify-content: center;
+}
+
+.data button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 40px;
+  background: #ffffff;
+  color: $font-color;
+}
+
+.data h1 {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.subscribe {
+  width: 150px;
+}
+
+.button-area {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.text-area {
+  margin-bottom: 30px;
+}
+
+// FOOTER
+
+.footer {
+  margin-top: 400px;
+}
+.container-footer {
+display: flex;
+justify-content: space-evenly;
+}
+
+.footer-img {
+  width: 250px;
+}
+
+.social-media {
+  display: flex;
+  padding: 10px;
+}
+
+svg {
+  width: 50px;
+  height: 50px;
+  fill: #c21ce1;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  background-color: #783996;
+  margin-top: 100px;
+  height: 50px;
+}
+
+footer > p {
+  text-align: center;
+  padding: 7px;
+}
+
+//FOOTER NAV
+.nav-footer {
+  width: 165px;
+  height: 250px;
+}
+
+@keyframes show {
+
+  0% {
+    background-size: 0 0;
+    opacity: 0;
+  }
+  100% {
+    background-size: 502px 424px;
+    opacity: 1;
+  }
+}
+
+@keyframes spin-reverse {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes stretch {
+
+  0% {
+    background-size: 460px 460px;
+  }
+  100% {
+    background-size: 502px 424px;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hop {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 16px;
+  }
+}
